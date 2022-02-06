@@ -1,0 +1,29 @@
+{
+  "name": "fastify-graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist",
+    "dev": "nodemon --exec babel-node src/index.js ",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "fastify": "^3.27.1",
+    "fastify-cors": "^6.0.2",
+    "graphql": "^16.3.0",
+    "graphql-subscriptions": "^2.0.0",
+    "mercurius": "^9.2.0",
+    "subscriptions-transport-ws": "^0.11.0",
+    "ws": "^8.4.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
